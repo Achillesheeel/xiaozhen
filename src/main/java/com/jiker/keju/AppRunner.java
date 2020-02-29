@@ -8,9 +8,9 @@ import java.util.List;
 public class AppRunner {
 
     public static void main(String[] args) {
-        //String testDataFile = args[0];
+        String testDataFile = args[0];
         ReadUtil readUtil = new ReadUtil();
-        List<Integer>  ansArr= readUtil.getFileFromResources("testData.txt");
+        List<Integer>  ansArr= readUtil.getFileFromResources(testDataFile);
         TaxiCalculate taxiCalculate = new TaxiCalculate();
         String receipt = taxiCalculate.getMoney(ansArr);
         System.out.println(receipt);
