@@ -31,7 +31,9 @@ repositories {
 dependencies {
         testImplementation "junit:junit:4.13"
         testImplementation "org.assertj:assertj-core:3.9.1"
-    }
+    compile 'junit:junit:4.12'
+    compile 'junit:junit:4.12'
+}
 
     checkstyle {
     ignoreFailures = false
